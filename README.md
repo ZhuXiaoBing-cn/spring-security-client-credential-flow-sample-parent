@@ -17,16 +17,16 @@ service, or a web site.
 
 ## Getting started
 
-In this project, `spring-security-client-credential-flow` (referred to as 'Web APP') is used as the
+In this project, `spring-security-client-credential-flow` (referred to as **Web APP**) is used as the
 client side to access `azure-spring-boot-sample-active-directory-b2c-resource-server` (referred to
-as 'Web API') by accessing the access token in the way of client credential flow. Then we get
+as **Web API**) by accessing the access token in the way of client credential flow. Then we get
 resource data.
 
 ### Configure Web APP
 
-在Web APP中使用了两种方式去通过client-credential-flow去换取token：
+There are two ways to exchange tokens for client credential flow in Web APP:
 
-- 第一种方式：
+- The first way:
 
 ```java
 @GetMapping("/client_file_read")
@@ -43,7 +43,7 @@ public String fileRead(){
     }
 ```
 
-- 第二种方式：
+- The second way:
 
 ```java
     @GetMapping("/client_file_write")
