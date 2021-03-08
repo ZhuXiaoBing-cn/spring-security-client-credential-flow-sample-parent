@@ -1,0 +1,13 @@
+spring:
+  security:
+    oauth2:
+      client:
+        registration:
+          aad-example:
+            authorization-grant-type: client_credentials
+            client-id: <your-client-id>
+            client-secret: <your-secret>
+            scope: <your-scope>
+            token-uri: <your-token-uri>
+server:
+  port: 8080
