@@ -85,10 +85,13 @@ spring:
 ```
 
 ### Configure Web API
-
 #### Configure application.yml
 
 ```yml
+# In v2.0 tokens, this is always the client ID of the API, while in v1.0 tokens it can be the resource URI used in the request.
+# If we configure azure.activedirectory.app-id-uri will be to check the audience.
+# If you are using v1.0 tokens, configure app-id-uri to properly complete the audience validation.
+
 azure:
   activedirectory:
     b2c:
