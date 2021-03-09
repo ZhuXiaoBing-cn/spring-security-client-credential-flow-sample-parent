@@ -40,7 +40,7 @@ public String fileRead(){
     .bodyToMono(String.class)
     .block();
     return"response:"+(null!=body?body:"failed.");
-    }
+}
 ```
 
 - The second way:
@@ -50,7 +50,7 @@ public String fileRead(){
 @ResponseBody
 public String fileWrite(@RegisteredOAuth2AuthorizedClient("aad-example") OAuth2AuthorizedClient authorizedClient){
     return callCustomResourceServer(authorizedClient);
-    }
+}
 private String callCustomResourceServer(OAuth2AuthorizedClient authorizedClient){
     if(null!=authorizedClient){
     String body=webClient
