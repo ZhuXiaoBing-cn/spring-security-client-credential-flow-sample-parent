@@ -85,27 +85,13 @@ spring:
 ```
 
 ### Configure Web API
-#### Configure application.yml
-
-```yml
-# In v2.0 tokens, this is always the client ID of the API, while in v1.0 tokens it can be the resource URI used in the request.
-# If we configure azure.activedirectory.app-id-uri will be to check the audience.
-# If you are using v1.0 tokens, configure app-id-uri to properly complete the audience validation.
-
-azure:
-  activedirectory:
-    b2c:
-      tenant-id: ${your-tenant-id}
-      client-id: ${your-client-id}
-      app-id-uri: ${your-app-id-uri}
-```
+Here is the reference [azure-spring-boot-sample-active-directory-b2c-resource-server](https://github.com/Azure/azure-sdk-for-java/tree/master/sdk/spring/azure-spring-boot-samples/azure-spring-boot-sample-active-directory-resource-server).
 
 ## Examples
-
 ### Run with Maven
 
 ```shell
-cd spring-security-client-credential-flow-sample-parent/azure-spring-boot-sample-active-directory-b2c-resource-server
+cd azure-spring-boot-sample-active-directory-b2c-resource-server
 mvn spring-boot:run
 ```
 

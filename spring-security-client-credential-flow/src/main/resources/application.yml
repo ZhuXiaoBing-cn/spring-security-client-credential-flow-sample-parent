@@ -9,5 +9,3 @@ spring:
             client-secret: <your-secret>
             scope: <your-scope>
             token-uri: <your-token-uri>
-server:
-  port: 8080
