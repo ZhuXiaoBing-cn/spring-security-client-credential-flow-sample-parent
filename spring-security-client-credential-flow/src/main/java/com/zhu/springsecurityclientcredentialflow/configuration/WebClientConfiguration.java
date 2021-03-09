@@ -30,7 +30,6 @@ public class WebClientConfiguration {
     public WebClient webClient(OAuth2AuthorizedClientManager authorizedClientManager) {
         ServletOAuth2AuthorizedClientExchangeFilterFunction oauth2Client =
             new ServletOAuth2AuthorizedClientExchangeFilterFunction(authorizedClientManager);
-//        oauth2Client.setDefaultClientRegistrationId("aad-example");
         return WebClient.builder()
                         .apply(oauth2Client.oauth2Configuration())
                         .build();

@@ -46,7 +46,7 @@ public String fileRead(){
 - The second way:
 
 ```java
-    @GetMapping("/client_file_write")
+@GetMapping("/client_file_write")
 @ResponseBody
 public String fileWrite(@RegisteredOAuth2AuthorizedClient("aad-example") OAuth2AuthorizedClient authorizedClient){
     return callCustomResourceServer(authorizedClient);
@@ -64,7 +64,7 @@ private String callCustomResourceServer(OAuth2AuthorizedClient authorizedClient)
     }else{
     return"response failed.";
     }
-    }
+}
 ```
 In the end, these two approaches will be executed to `DefaultOAuth2AuthorizedClientManager#authorize` method, get the access token.
 
