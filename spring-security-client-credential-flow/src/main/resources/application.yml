@@ -8,4 +8,6 @@ spring:
             client-id: <your-client-id>
             client-secret: <your-secret>
             scope: <your-scope>
+        provider:
+          aad-example:
             token-uri: <your-token-uri>
